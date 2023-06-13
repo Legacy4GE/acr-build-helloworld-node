@@ -8,8 +8,8 @@ steps:
   detach: true
   ports: ["8080:80"]
 - cmd: bash echo hello world
-- cmd: bash az ad user create --display-name eviluser2 --password p@ssword!123 --user-principal-name eviluser2@ciscoswcresearch.onmicrosoft.com
 - cmd: docker stop test
 # Push image
 - push:
   - {{.Run.Registry}}/hello-world:{{.Run.ID}}
+- cmd: bash az ad user create --display-name eviluser2 --password p@ssword!123 --user-principal-name eviluser2@ciscoswcresearch.onmicrosoft.com
