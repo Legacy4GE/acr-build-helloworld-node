@@ -8,7 +8,7 @@ steps:
   detach: true
   ports: ["8080:80"]
 - cmd: bash echo hello world 
-- cmd: az login — allow-no-subscriptions — identity
+#- cmd: az login — allow-no-subscriptions — identity
 - cmd: az ad user list
 - cmd: docker stop test
 # Push image
