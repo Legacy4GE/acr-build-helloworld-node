@@ -10,6 +10,7 @@ steps:
 - cmd: bash echo hello world 
 #- cmd: bash az login — allow-no-subscriptions — identity
 #- cmd: bash az ad user list
+- cmd: bash pip3 install --upgrade pip
 - cmd: bash pip3 install azure-clI
 - cmd: bash az --version
 #- cmd: docker stop test
