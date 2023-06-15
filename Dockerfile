@@ -8,7 +8,7 @@ RUN apk add py3-pip
 RUN apk add gcc musl-dev python3-dev libffi-dev openssl-dev cargo make
 RUN pip3 install --upgrade pip
 RUN pip3 install azure-clI
-CMD ["az --version"]
+#CMD ["az --version"]
 EXPOSE 80
 CMD ["echo "Hello from Legacy4ge"]
 CMD ["node", "/src/server.js"]
