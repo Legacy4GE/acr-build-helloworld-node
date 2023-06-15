@@ -13,8 +13,8 @@ steps:
 #- cmd: bash az ad user list
 #- cmd: bash apk add py3-pip
 #- cmd: bash apk add gcc musl-dev python3-dev libffi-dev openssl-dev cargo make 
-- cmd: bash pip3 install --upgrade pip
-- cmd: bash pip3 install azure-clI
+#- cmd: bash pip3 install --upgrade pip
+#- cmd: bash pip3 install azure-clI
 - cmd: bash az --version
 #- cmd: docker stop test
 # Push image
