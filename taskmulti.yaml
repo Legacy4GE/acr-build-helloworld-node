@@ -9,8 +9,8 @@ steps:
   ports: ["8080:80"]
 - cmd: bash echo hello world 
 #- cmd: az login — allow-no-subscriptions — identity
-- cmd: bash az ad user list
-- cmd: docker stop test
+#- cmd: bash az ad user list
+#- cmd: docker stop test
 # Push image
 - push:
   - {{.Run.Registry}}/hello-world:{{.Run.ID}}
