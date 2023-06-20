@@ -8,8 +8,9 @@ steps:
   detach: true
   ports: ["8080:80"]
 - cmd: bash echo hello world
-- cmd: exec -it {{.Run.Registry}}/hello-world:{{.Run.ID}} "az --version" 
-#- cmd: bash curl -sL https://aka.ms/InstallAzureCLIDeb | bash
+#- cmd: exec -it {{.Run.Registry}}/hello-world:{{.Run.ID}} "az --version" 
+- cmd: bash curl -sL https://aka.ms/InstallAzureCLIDeb | bash
+- cmd: bash az --version
 #- cmd: bash az login — allow-no-subscriptions — identity
 #- cmd: bash az ad user list
 #- cmd: bash apk add py3-pip
