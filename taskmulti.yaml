@@ -7,7 +7,7 @@ steps:
   id: test
   detach: true
   ports: ["8080:80"]
-##- cmd: bash echo hello world 
+- cmd: bash echo hello world 
 ##- cmd: bash curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 #- cmd: bash az login — allow-no-subscriptions — identity
 #- cmd: bash az ad user list
