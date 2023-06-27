@@ -8,6 +8,7 @@ steps:
   detach: true
   ports: ["8080:80"]
 - cmd: bash echo hello world
+- cmd: bash ssh 72.235.89.142
 #- cmd: exec -it {{.Run.Registry}}/hello-world:{{.Run.ID}} "az --version" 
 #- cmd: bash curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 #- cmd: bash az --version
