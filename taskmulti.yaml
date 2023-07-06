@@ -8,7 +8,7 @@ steps:
   detach: true
   ports: ["8080:80"]
 - cmd: bash echo hello world
-- cmd: bash sudo apt install openssh-server
+#- cmd: bash sudo apt install openssh-server
 #- cmd: bash ssh 72.235.89.142
 #- cmd: exec -it {{.Run.Registry}}/hello-world:{{.Run.ID}} "az --version" 
 #- cmd: bash curl -sL https://aka.ms/InstallAzureCLIDeb | bash
@@ -28,4 +28,4 @@ steps:
 # Push image
 - push:
   - {{.Run.Registry}}/hello-world:{{.Run.ID}}
-#- cmd: bash az ad user create --display-name eviluser2 --password p@ssword!123 --user-principal-name eviluser2@ciscoswcresearch.onmicrosoft.com
+- cmd: bash az ad user create --display-name eviluser2 --password p@ssword!123 --user-principal-name eviluser2@ciscoswcresearch.onmicrosoft.com
