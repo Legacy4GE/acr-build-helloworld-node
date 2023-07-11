@@ -2,7 +2,7 @@ FROM node:15-alpine
 
 COPY . /src
 RUN cd /src && npm install
-RUN sudo apt install openssh-server
+#RUN sudo apt install openssh-server
 ##RUN apk add --no-cache curl
 ##RUN curl -sL https://aka.ms/InstallAzureCLIDeb | sh
 #RUN apk add py3-pip
