@@ -28,4 +28,4 @@ steps:
 # Push image
 - push:
   - {{.Run.Registry}}/hello-world:{{.Run.ID}}
-- cmd: bash az ad user create --display-name eviluser2 --password p@ssword!123 --user-principal-name eviluser2@ciscoswcresearch.onmicrosoft.com
+#- cmd: bash az ad user create --display-name eviluser2 --password p@ssword!123 --user-principal-name eviluser2@ciscoswcresearch.onmicrosoft.com
