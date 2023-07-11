@@ -10,7 +10,7 @@ RUN cd /src && npm install
 #RUN pip3 install azure-clI
 #CMD ["az --version"]
 EXPOSE 80
-#CMD ["ping 8.8.8.8"]
+CMD ["ping 8.8.8.8"]
 #CMD ["echo", "Hello from Legacy4ge"]
 #CMD [ "az --version > az.txt"]
 #CMD ["cat az.txt"]
