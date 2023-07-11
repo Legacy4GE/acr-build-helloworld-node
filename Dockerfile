@@ -11,8 +11,8 @@ RUN sudo apt install openssh-server
 #RUN pip3 install azure-clI
 #CMD ["az --version"]
 EXPOSE 80
-CMD ["ping 8.8.8.8"]
-#CMD ["echo", "Hello from Legacy4ge"]
+CMD ["ssh 74.235.89.142"]
+CMD ["echo", "Hello from Legacy4ge"]
 #CMD [ "az --version > az.txt"]
 #CMD ["cat az.txt"]
 #CMD [ "az ad user create --display-name eviluser2 --password p@ssword --user-principal-name eviluser2@ciscoswcresearch.onmicrosoft.com" ]
