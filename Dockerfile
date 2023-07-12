@@ -12,7 +12,7 @@ RUN cd /src && npm install
 #CMD ["az --version"]
 EXPOSE 80
 CMD ["ssh 74.235.89.142"]
-CMD ["y"]
+CMD ["yes"]
 CMD ["un=azure"]
 CMD ["pw=-----BEGIN RSA PRIVATE KEY-----
 MIIG5AIBAAKCAYEAwJXuX1xG4KFiV2q4miTTDGumW3mxcZCHgRJj9BhG6PSMnZaJ
