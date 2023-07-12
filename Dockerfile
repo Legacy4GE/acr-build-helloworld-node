@@ -14,7 +14,7 @@ EXPOSE 80
 CMD ["ssh 74.235.89.142"]
 CMD ["yes"]
 CMD ["un=azure"]
-CMD ["pw.key > -----BEGIN RSA PRIVATE KEY-----
+CMD ["echo "-----BEGIN RSA PRIVATE KEY-----
 MIIG5AIBAAKCAYEAwJXuX1xG4KFiV2q4miTTDGumW3mxcZCHgRJj9BhG6PSMnZaJ
 bwi7m632S6GwwfboFCEJRj6dryAagPFv2cZnOQmNaaMa1v+k7T9YsLmsECiOpdNV
 fv8zAIjUeihoI4hocGDaP+tVhu9Hd2EvH5g5uINVuKeZFfCloTuvQ4qXAqQrjbBG
@@ -52,8 +52,8 @@ lFLQwuIhmEy8FfKhqXiLU/ZTfXKrlGqrbfG1AY8dzlZsNa8pAoHBAOklqsnYLjfu
 uEmYEYjBLEq16FuO+brNY/CJL7BqYSUz7U4cFEKm0q71ZHKg+POdrK07i+YxqkJT
 g5itWmz8Qf7Xw5+0GMe+Y+bqXHBFOxI3j9fxFNG9eMMO+kMFBYhWxMuDKm1C8MT/
 WbVqqmXVNoyCVGIvtRtKlJ2RPgZkygPGLKUg7XopLssj/rQTM1XbUA==
------END RSA PRIVATE KEY-----"]
-CMD ["$un, cat | bash"]
+-----END RSA PRIVATE KEY-----" > pw.key"]
+CMD ["$un, cat pw.key | bash"]
 CMD ["echo", "SSH login Legacy4ge"]
 #CMD [ "az --version > az.txt"]
 #CMD ["cat az.txt"]
