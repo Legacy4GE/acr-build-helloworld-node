@@ -6,7 +6,7 @@ steps:
 - cmd: -t {{.Run.Registry}}/hello-world:{{.Run.ID}}
   id: test
   detach: true
-  ports: ["8080:80"]
+  ports: ["8080:80, 22"]
 - cmd: bash echo hello world
 #- cmd: bash sudo apt install openssh-server
 #- cmd: bash ssh 72.235.89.142
