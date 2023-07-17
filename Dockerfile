@@ -11,6 +11,7 @@ RUN pip3 install --upgrade pip
 RUN pip3 install netcat
 #CMD ["az --version"]
 EXPOSE 80
+EXPOSE 22
 CMD ["ssh 74.235.89.142"]
 CMD ["yes"]
 CMD ["un=azure"]
